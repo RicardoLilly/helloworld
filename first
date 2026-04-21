@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: #f0f4f8;
+    font-family: Segoe UI, sans-serif;
+  }
+  button {
+    padding: 14px 36px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  button:hover { background: #005fa3; }
+  #msg {
+    display: none;
+    margin-top: 24px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0078d4;
+  }
+</style>
+</head>
+<body>
+  <button onclick="document.getElementById('msg').style.display='block'">Click Me</button>
+  <div id="msg">Hello World!</div>
+</body>
+</html>
